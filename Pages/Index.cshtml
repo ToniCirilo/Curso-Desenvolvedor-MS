@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Trabalho Final do curso MS Dev";
+}
+
+<div class="text-center">
+    <h1 class="display-4"><i>"Construção de um aplicativo de elevador"</i> - Antonio Cirilo</h1>
+
+    O objetivo do trabalho era construir um elevador simples que tivesse as funções de <b>'subir'</b>, <b>'descer'</b>,
+    <b>'adicionar uma pessoa'</b> e <b>'retirar uma pessoa'</b>. Tudo isso sendo apresentado no próprio console do <i>Visual Studio</i>.
+    Para isso, primeiro foi necessário criar uma classe chamada <i>'Elevador'</i> na pasta Models, e dentro dessa classe foram inseridos 
+    os atributos públicos do elevador (Capacidade máxima de passageiros, Quantidade inicial de passageiros, Total de andares do prédio e Andar inicial).
+    <br />
+    <img src = "img\ProjetoElevadorprint1.png">
+    <br />
+    Depois, foram criados os métodos pedidos pelo professor, que seriam as ações que o Elevador faria ao serem cumpridos determinados requisitos: Inicializar, Entrar, Sair, Subir e Descer.
+    Foram então atribuídas as ações para cada um desses métodos, para que quando cada um deles fosse 'chamado' no Program.cs, tivesse a sua função definida.
+    <br />
+    <img src = "img\ProjetoElevadorprint2.png">
+    <br />
+    Assim sendo, por exemplo, quando a função 'Entrar' fosse acionada pelo usuário no console, o programa já saberia que deve adicionar pessoas++.
+    Com todas as funções programadas, agora só restava setar a janela <i>'Program.cs'</i>, onde de fato o programa iria rodar.
+    A primeira coisa a fazer nessa parte foi inserir a biblioteca do <i>'Elevador.cs'</i> pra funcionar no <i>'Program.cs'</i>, criando um objeto com o nome de "Elevador Divertido" (nome aleatório escolhido para o elevador). 
+    <br />
+    <img src = "img\ProjetoElevadorprint3.jpg">
+    <br />
+    Com isso feito, foi inicializado o elevador assim que o programa abrisse, e junto com a função 'inicializar', os atributos dizendo que a capacidade máxima de pessoas nesse
+    elevador é igual a <b>5</b> e o total de andares do prédio é igual a <b>7</b>, logo, não seria possível ultrapassar esses parâmetros, segundo o que tinha sido definido nos métodos, na etapa 
+    anterior. Feito isso, foi criado um 'switch case' para não precisar usar diversas linhas de 'if' e 'else if' com as opções do que cada input do usuário faria ao elevador. 
+    <br />
+    <img src = "img\ProjetoElevadorprint4.png">
+    <br />
+    Também foi inserido um dado booleano que muda o <i>Continuar</i> para <i>false</i> e encerra o Elevador quando o usuário pressiona '5 - Sair', como ensinado em aula. O resultado é o que pode ser visto no programa final disponibilizado 
+    junto a esse arquivo no GitHub. 
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
